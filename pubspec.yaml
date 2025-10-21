@@ -1,0 +1,46 @@
+name: card_organizer_app
+description: A Flutter app for organizing playing cards using SQLite and CRUD operations.
+publish_to: "none" # since this is for class use only
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# ---------------------------
+#   DEPENDENCIES SECTION
+# ---------------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- DATABASE & STORAGE ---
+  sqflite: ^2.3.3+1        # SQLite database plugin
+  path: ^1.9.0             # For file system path joining
+  path_provider: ^2.1.4    # To locate app document directories
+
+  # --- UI & IMAGE LOADING ---
+  cached_network_image: ^3.3.1  # Loads and caches network images
+  cupertino_icons: ^1.0.6       # iOS-style icons for Flutter
+
+  # --- OPTIONAL (for fancy grid layouts, if needed later) ---
+  flutter_staggered_grid_view: ^0.7.0
+
+# ---------------------------
+#   DEVELOPMENT DEPENDENCIES
+# ---------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.2     # Recommended linting rules
+
+# ---------------------------
+#   FLUTTER SECTION
+# ---------------------------
+flutter:
+  uses-material-design: true
+
+  # If you later add assets (images, fonts, etc.), uncomment below:
+  # assets:
+  #   - assets/
